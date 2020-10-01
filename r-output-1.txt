@@ -1,0 +1,16 @@
+lm(formula = CLOZE.TEST ~ AGE.ARRIVAL, data = vi_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-29.573  -1.894   1.134   5.704  13.283 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  51.7337     6.9584   7.435 6.85e-07 ***
+AGE.ARRIVAL  -0.7149     0.3190  -2.241   0.0379 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 9.6 on 18 degrees of freedom
+Multiple R-squared:  0.2182,	Adjusted R-squared:  0.1747 
+F-statistic: 5.022 on 1 and 18 DF,  p-value: 0.03787

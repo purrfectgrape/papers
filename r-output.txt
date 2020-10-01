@@ -1,0 +1,16 @@
+lm(formula = PERCEPTION.SCORE ~ AGE.ARRIVAL, data = vi_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-17.030  -1.249   1.476   3.824  11.127 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  52.4899     4.8364  10.853  2.5e-09 ***
+AGE.ARRIVAL  -0.5730     0.2217  -2.584   0.0187 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 6.673 on 18 degrees of freedom
+Multiple R-squared:  0.2706,	Adjusted R-squared:  0.2301 
+F-statistic:  6.68 on 1 and 18 DF,  p-value: 0.0187

@@ -1,0 +1,12 @@
+Welch Two Sample t-test
+
+data:  en$CLOZE.SCORE and vi$CLOZE.SCORE
+t = 5.2762, df = 22.391, p-value = 2.561e-05
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  4.814455 11.039796
+sample estimates:
+mean of x mean of y 
+ 46.76923  38.84211 
+
+

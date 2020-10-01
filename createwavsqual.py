@@ -1,0 +1,188 @@
+#!/usr/bin/python3
+
+# Script to process sound files.
+
+import fnmatch
+import glob
+import os
+from collections import defaultdict
+from pydub import AudioSegment
+
+# Create a dictionary of each item: a list of its filenames.
+def create_files_dict(dir):
+    path = os.getcwd()
+    ext = ".wav"
+    files = fnmatch.filter(os.listdir(path), '*' + ext)
+    filesdict = defaultdict(list)
+    for file in files:
+        if file.split("_")[1].isdigit():
+            key = file.split("_")[2]
+        else:
+            key = file.split("_")[1]
+        filesdict[key].append(file)
+    return filesdict
+
+# Create the test (different in different test lists)
+def createTestItems(filesdict):
+    # Create test items
+    sil = AudioSegment.silent(duration=1500)
+    for val in filesdict.values():
+        for v in val:
+            if "_t_" in v or "_d_" in v or "_q_" in v:
+                testsound = AudioSegment.from_wav(v)
+                toReturn = testsound + sil +
+                testsound + sil + testsound
+                # Note: remember to change the test list's code below:
+                toReturn.export("TESTA1-" + v, format="wav")
+            else:
+                pass
+
+# Create stimuli (these should be the same across different test lists)
+def createStimuli(filesdict):
+    shortsil = AudioSegment.silent(duration=1000)
+    longsil = AudioSegment.silent(duration=2000)
+    for k in filesdict.keys():
+        # Two-syllable words. Presentation order: 10 and then 01 (or 12)
+        if (k == "taebak" or k == "moray" or
+         k == "zaabir" or k == "gaubert" or
+         k == "anna" or k == "miro" or
+         k == "oblak" or k == "panshee" or
+         k == "davao" or k == "chauffeured" or
+         k == "sequins" or k == "capri" or
+         k == "rocard" or k == "izaak" or
+         k == "akin" or k == "detour" or k == "covert" or
+         k == "versatile" or k == "surmount" or
+         k == "wander" or k == "cloak" or
+         k == "tirade" or k == "promoted" or
+         k == "cot" or k == "feam" or k == "flowers" or
+         k == "together" or k == "live"):
+            for fn in filesdict.get(k):
+                if "_s_1" in fn:
+                    s1 = AudioSegment.from_wav(fn)
+                elif "_s_2" in fn:
+                    s2 = AudioSegment.from_wav(fn)
+            sound = s1 + shortsil + s2 + longsil + s1
+             + shortsil + s2 + longsil + s1 + shortsil + s2
+            sound.export("STIMULI-" + k + ".wav", format="wav")
+        # Two-syllable words. Presentation order: 01 and then 10 (or 21)
+        elif (k == "bennet" or k == "tanvo" or
+         k == "peenan" or k == "pokgrom" or
+          k == "moshee" or k == "saevir" or
+           k == "kantar" or k == "danbah" or
+            k == "oma" or k == "mahmud" or
+             k == "concave" or k == "obit" or
+              k == "sharon" or k == "sayiid" or
+               k == "buffet" or k == "alan" or
+                k == "kolan" or k == "bath" or
+                 k == "speak" or k == "spring" or
+                  k == "repaired" or k == "stalked" or
+                   k == "close" or k == "dispose" or
+                    k == "polar" or k == "loose"):
+            for fn in filesdict.get(k):
+                if "_s_1" in fn:
+                    s1 = AudioSegment.from_wav(fn)
+                elif "_s_2" in fn:
+                    s2 = AudioSegment.from_wav(fn)
+            sound = s2 + shortsil + s1 + longsil +
+             s2 + shortsil + s1 + longsil +
+              s2 + shortsil + s1
+            sound.export("STIMULI-" + k + ".wav", format="wav")
+        # Three syllable word. Presentation order: 123
+        elif k == "anfelar":
+            for fn in filesdict.get(k):
+                if "_s_1" in fn:
+                    s1 = AudioSegment.from_wav(fn)
+                elif "_s_2" in fn:
+                    s2 = AudioSegment.from_wav(fn)
+                elif "_s_3" in fn:
+                    s3 = AudioSegment.from_wav(fn)
+            sound = s1 + shortsil + s2 + shortsil + s3 +
+             longsil + s1 + shortsil + s2 + shortsil + s3 +
+              longsil + s1 + shortsil + s2 + shortsil + s3
+            sound.export("STIMULI-" + k + ".wav", format="wav")
+        # Three syllable word. Presentation order: 132
+        elif k == "penoquin":
+            for fn in filesdict.get(k):
+                if "_s_1" in fn:
+                    s1 = AudioSegment.from_wav(fn)
+                elif "_s_2" in fn:
+                    s2 = AudioSegment.from_wav(fn)
+                elif "_s_3" in fn:
+                    s3 = AudioSegment.from_wav(fn)
+            sound = s1 + shortsil + s3 + shortsil + s2 + longsil +
+             s1 + shortsil + s3 + shortsil + s2 + longsil +
+              s1 + shortsil + s3 + shortsil + s2
+            sound.export("STIMULI-" + k + ".wav", format="wav")
+        # Three syllable word. Presentation order: 213
+        elif k == "vitaely":
+            for fn in filesdict.get(k):
+                if "_s_1" in fn:
+                    s1 = AudioSegment.from_wav(fn)
+                elif "_s_2" in fn:
+                    s2 = AudioSegment.from_wav(fn)
+                elif "_s_3" in fn:
+                    s3 = AudioSegment.from_wav(fn)
+            sound = s2 + shortsil + s1 + shortsil + s3 + longsil +
+             s2 + shortsil + s1 + shortsil + s3 + longsil +
+              s2 + shortsil + s1 + shortsil + s3
+            sound.export("STIMULI-" + k + ".wav", format="wav")
+        # Three syllable word. Presentation order: 213
+        elif k == "vitaely":
+            for fn in filesdict.get(k):
+                if "_s_1" in fn:
+                    s1 = AudioSegment.from_wav(fn)
+                elif "_s_2" in fn:
+                    s2 = AudioSegment.from_wav(fn)
+                elif "_s_3" in fn:
+                    s3 = AudioSegment.from_wav(fn)
+            sound = s2 + shortsil + s1 + shortsil + s3 + longsil +
+             s2 + shortsil + s1 + shortsil + s3 + longsil +
+              s2 + shortsil + s1 + shortsil + s3
+            sound.export("STIMULI-" + k + ".wav", format="wav")
+        # Three syllable word. Presentation order: 231
+        elif k == "roseemund":
+            for fn in filesdict.get(k):
+                if "_s_1" in fn:
+                    s1 = AudioSegment.from_wav(fn)
+                elif "_s_2" in fn:
+                    s2 = AudioSegment.from_wav(fn)
+                elif "_s_3" in fn:
+                    s3 = AudioSegment.from_wav(fn)
+            sound = s2 + shortsil + s3 + shortsil + s1 + longsil +
+             s2 + shortsil + s3 + shortsil + s1 + longsil +
+              s2 + shortsil + s3 + shortsil + s1
+            sound.export("STIMULI-" + k + ".wav", format="wav")
+        # Three syllable word. Presentation order: 312
+        elif k == "caseybeer":
+            for fn in filesdict.get(k):
+                if "_s_1" in fn:
+                    s1 = AudioSegment.from_wav(fn)
+                elif "_s_2" in fn:
+                    s2 = AudioSegment.from_wav(fn)
+                elif "_s_3" in fn:
+                    s3 = AudioSegment.from_wav(fn)
+            sound = s3 + shortsil + s1 + shortsil + s2 + longsil +
+             s3 + shortsil + s1 + shortsil + s2 + longsil +
+              s3 + shortsil + s1 + shortsil + s2
+            sound.export("STIMULI-" + k + ".wav", format="wav")
+        # Three syllable word. Presentation order: 321
+        elif k == "yokota":
+            for fn in filesdict.get(k):
+                if "_s_1" in fn:
+                    s1 = AudioSegment.from_wav(fn)
+                elif "_s_2" in fn:
+                    s2 = AudioSegment.from_wav(fn)
+                elif "_s_3" in fn:
+                    s3 = AudioSegment.from_wav(fn)
+            sound = s3 + shortsil + s2 + shortsil + s1 + longsil +
+             s3 + shortsil + s2 + shortsil + s1 + longsil +
+              s3 + shortsil + s2 + shortsil + s1
+            sound.export("STIMULI-" + k + ".wav", format="wav")
+        else:
+            pass
+
+if __name__ == "__main__":
+    currentdir = os.getcwd()
+    filesdict = create_files_dict(currentdir)
+    createTestItems(filesdict)
+    createStimuli(filesdict)

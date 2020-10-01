@@ -1,0 +1,50 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background and Literature Review}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Prosodic characteristics of American English and Vietnamese}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{American English as a stress-timed language}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Vietnamese as a tone language}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Speech Perception}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Towards forming the research questions}{subsection.2.2}% 7
+\BOOKMARK [1][-]{section.3}{Research Questions and Hypotheses}{}% 8
+\BOOKMARK [1][-]{section.4}{Methodology}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Participants}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Materials}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Procedure}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.4}{Acoustic statistics of the stimuli}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Results}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Pilot study result}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Full study results}{section.5}% 16
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Cloze test and perception tasks}{subsection.5.2}% 17
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Identification accuracy}{subsection.5.2}% 18
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Mixed effects analysis}{subsection.5.2}% 19
+\BOOKMARK [4][-]{paragraph.5.2.3.1}{Bisyllabic stimuli}{subsubsection.5.2.3}% 20
+\BOOKMARK [4][-]{paragraph.5.2.3.2}{Trisyllabic stimuli}{subsubsection.5.2.3}% 21
+\BOOKMARK [4][-]{paragraph.5.2.3.3}{Reaction time in bisyllabic stimuli}{subsubsection.5.2.3}% 22
+\BOOKMARK [4][-]{paragraph.5.2.3.4}{Age of arrival effect}{subsubsection.5.2.3}% 23
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 24
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 25
+\BOOKMARK [1][-]{appendix.A}{Appendix}{}% 26
+\BOOKMARK [2][-]{subsection.A.1}{Queried result - Bisyllabic words}{appendix.A}% 27
+\BOOKMARK [2][-]{subsection.A.2}{Queried result - Trisyllabic words}{appendix.A}% 28
+\BOOKMARK [2][-]{subsection.A.3}{Stimuli - Bisyllabic words}{appendix.A}% 29
+\BOOKMARK [3][-]{subsubsection.A.3.1}{Category 1: stress on the first syllable in a statement context}{subsection.A.3}% 30
+\BOOKMARK [3][-]{subsubsection.A.3.2}{Category 2: stress on the first syllable in a yes/no question context}{subsection.A.3}% 31
+\BOOKMARK [3][-]{subsubsection.A.3.3}{Category 3: stress on the final syllable in a statement context}{subsection.A.3}% 32
+\BOOKMARK [3][-]{subsubsection.A.3.4}{Category 4: stress on the final syllable in a yes/no question context}{subsection.A.3}% 33
+\BOOKMARK [2][-]{subsection.A.4}{Stimuli - Trisyllabic words}{appendix.A}% 34
+\BOOKMARK [3][-]{subsubsection.A.4.1}{Category 1: stress on the first syllable in a statement context}{subsection.A.4}% 35
+\BOOKMARK [3][-]{subsubsection.A.4.2}{Category 2: stress on the first syllable in a yes/no question context}{subsection.A.4}% 36
+\BOOKMARK [3][-]{subsubsection.A.4.3}{Category 3: stress on the middle syllable in a statement context}{subsection.A.4}% 37
+\BOOKMARK [3][-]{subsubsection.A.4.4}{Category 4: stress on the middle syllable in a yes/no question context}{subsection.A.4}% 38
+\BOOKMARK [3][-]{subsubsection.A.4.5}{Category 5: stress on the final syllable in a statement context}{subsection.A.4}% 39
+\BOOKMARK [3][-]{subsubsection.A.4.6}{Category 6: stress on the final syllable in a yes/no question context}{subsection.A.4}% 40
+\BOOKMARK [2][-]{subsection.A.5}{Fillers}{appendix.A}% 41
+\BOOKMARK [2][-]{subsection.A.6}{Full test}{appendix.A}% 42
+\BOOKMARK [3][-]{subsubsection.A.6.1}{Block 1}{subsection.A.6}% 43
+\BOOKMARK [3][-]{subsubsection.A.6.2}{Block 2}{subsection.A.6}% 44
+\BOOKMARK [3][-]{subsubsection.A.6.3}{Block 3}{subsection.A.6}% 45
+\BOOKMARK [3][-]{subsubsection.A.6.4}{Block 4}{subsection.A.6}% 46
+\BOOKMARK [2][-]{subsection.A.7}{English cloze test}{appendix.A}% 47
+\BOOKMARK [2][-]{subsection.A.8}{Vietnamese cloze test}{appendix.A}% 48
+\BOOKMARK [2][-]{subsection.A.9}{Python script to create stimuli}{appendix.A}% 49
+\BOOKMARK [2][-]{subsection.A.10}{Praat script for acoustic analysis}{appendix.A}% 50

@@ -1,0 +1,29 @@
+# Script to query the duration and F0 values of stressed syllables.
+
+writeInfoLine: "DURATION and F0 values of stress syllables"
+
+selectObject: "Sound TwoSyllables", "TextGrid TwoSyllables"
+# Query the stressed syllable in the word-initial position.
+Extract intervals where: 2, "yes", "contains", "10"
+sounds# = selected# ("Sound")
+for i from 1 to size (sounds#)
+	selectObject: sounds# [i]
+	name$ = selected$ ("Sound")
+	To Pitch: 0.0, 130, 600
+	startTime = Get start time
+	endTime = Get end time
+	dur = endTime - startTime
+	startTimeBuffered = startTime + 0.025
+	endTimeBuffered = endTime - 0.025
+	stepDur = (endTimeBuffered - startTimeBuffered) / 2
+	aTimePoint = startTimeBuffered
+	bTimePoint = aTimePoint + stepDur
+	cTimePoint = bTimePoint + stepDur
+	aVal = Get value at time: aTimePoint, "Hertz", "Linear"
+	bVal = Get value at time: bTimePoint, "Hertz", "Linear"
+	cVal = Get value at time: cTimePoint, "Hertz", "Linear"
+	appendInfoLine: "--------------------------------------"
+	appendInfoLine: "Stressed syl /", name$, "/", tab$, fixed$ (dur, 3), tab$, fixed$ (aVal, 2), tab$, fixed$ (bVal, 2), tab$, fixed$ (cVal, 2)
+endfor
+
+appendInfoLine: "END OF REPORT"

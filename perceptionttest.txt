@@ -1,0 +1,10 @@
+	Welch Two Sample t-test
+
+data:  en$PERCEPTION.SCORE and vi$PERCEPTION.SCORE
+t = 5.7848, df = 23.805, p-value = 5.979e-06
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  6.712593 14.164331
+sample estimates:
+mean of x mean of y 
+ 51.03846  40.60000

@@ -1,0 +1,10 @@
+	Welch Two Sample t-test
+
+data:  en$STRESS.PERCEPTION.SCORE and vi$STRESS.PERCEPTION.SCORE
+t = 3.4017, df = 33.484, p-value = 0.001749
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 1.010244 4.012833
+sample estimates:
+mean of x mean of y 
+ 16.96154  14.45000 

@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: out/stress.aux
+The style file: acm.bst
+Database file #1: CitesforStressPaper.bib
+Warning--I didn't find a database entry for "Scholvin:2018aa"
+Warning--I didn't find a database entry for "Kang:2014aa"
+Warning--can't use both author and editor fields in Intonation
+Warning--can't use both author and editor fields in Cutler
+Warning--can't use both author and editor fields in gordon
+Warning--can't use both author and editor fields in levis
+Warning--can't use both author and editor fields in Li:2016aa
+Warning--empty booktitle in inproceedings
+Warning--empty year in Yiu:aa
+You've used 58 entries,
+            2253 wiz_defined-function locations,
+            889 strings with 11649 characters,
+and the built_in function-call counts, 16079 in all, are:
+= -- 1518
+> -- 646
+< -- 0
++ -- 285
+- -- 212
+* -- 1190
+:= -- 2707
+add.period$ -- 175
+call.type$ -- 58
+change.case$ -- 258
+chr.to.int$ -- 0
+cite$ -- 65
+duplicate$ -- 627
+empty$ -- 1387
+format.name$ -- 212
+if$ -- 3345
+int.to.chr$ -- 0
+int.to.str$ -- 58
+missing$ -- 67
+newline$ -- 292
+num.names$ -- 116
+pop$ -- 282
+preamble$ -- 1
+purify$ -- 222
+quote$ -- 0
+skip$ -- 350
+stack$ -- 0
+substring$ -- 864
+swap$ -- 145
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 200
+warning$ -- 7
+while$ -- 146
+width$ -- 60
+write$ -- 584
+(There were 9 warnings)
